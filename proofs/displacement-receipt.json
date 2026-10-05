@@ -1,0 +1,189 @@
+{
+  "hash": "0xeec2610f74b7cb6a70a0dbbf50525d667980c8a1bb82d4481d727177a614c812",
+  "from_address": "0x3e5827e50D824da2D8A05c612492F5ad9C0a75A7",
+  "to_address": "0x5BC314c08111DF5768f4A25AF25E879d910F9acF",
+  "data": {
+    "calldata": {
+      "readable": "{\"args\":[\"https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/displacement.md\",\"3ac48cabf9f81f290f734561a1936aac2f85d54321c1aad63acdd9adc6b4675a\",]\"method\":\"match\"}"
+    }
+  },
+  "status": 7,
+  "result": 6,
+  "consensus_data": {
+    "votes": {
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11": "agree",
+      "0x14402D49f317CE1a2F35BAE01b1804A2A9703dCb": "idle",
+      "0x90402341F0B0e97b23023c0a87de957FB7148E0F": "agree",
+      "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8": "agree",
+      "0xec2Fb79cd12255Eb34886CEd7332f27B98DEe658": "idle"
+    },
+    "leader_receipt": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "leader",
+        "vote": null,
+        "calldata": {
+          "readable": "{\"args\":[\"https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/displacement.md\",\"3ac48cabf9f81f290f734561a1936aac2f85d54321c1aad63acdd9adc6b4675a\",]\"method\":\"match\"}"
+        },
+        "eq_outputs": {
+          "0": {
+            "status": "return",
+            "payload": {
+              "readable": "{\"profiles\":[{\"id\":\"ada\"\"quote\":\"ada accepts lab and field, preferring lab over field.\"\"rejected\":[]\"tiers\":[[\"lab\",],[\"field\",],]\"unknown\":[]},{\"id\":\"ben\"\"quote\":\"ben accepts lab and field, preferring lab over field.\"\"rejected\":[]\"tiers\":[[\"lab\",],[\"field\",],]\"unknown\":[]},{\"id\":\"cy\"\"quote\":\"cy accepts field and lab, preferring field over lab.\"\"rejected\":[]\"tiers\":[[\"field\",],[\"lab\",],]\"unknown\":[]},{\"id\":\"lab\"\"quote\":\"lab accepts ben, ada and cy, preferring ben first, ada second and cy third.\"\"rejected\":[]\"tiers\":[[\"ben\",],[\"ada\",],[\"cy\",],]\"unknown\":[]},{\"id\":\"field\"\"quote\":\"field accepts ada, cy and ben, preferring ada first, cy second and ben third.\"\"rejected\":[]\"tiers\":[[\"ada\",],[\"cy\",],[\"ben\",],]\"unknown\":[]},]}"
+            }
+          }
+        },
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "calldata": {
+          "readable": "{\"args\":[\"https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/displacement.md\",\"3ac48cabf9f81f290f734561a1936aac2f85d54321c1aad63acdd9adc6b4675a\",]\"method\":\"match\"}"
+        },
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      }
+    ],
+    "validators": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree"
+      },
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle"
+      },
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle"
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree"
+      }
+    ]
+  },
+  "gaslimit": 1,
+  "nonce": 1,
+  "created_at": "2026-10-05T07:41:05.294531+00:00",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "origin_address": "0x3e5827e50D824da2D8A05c612492F5ad9C0a75A7",
+  "triggered_on": null,
+  "appeal_validators_timeout": false,
+  "sim_config": {
+    "signed_rollup_transaction": "0xf9020901808307a12094b7278a61aa25c888815afc32ad3cc52ff24fe57580b901a427241a990000000000000000000000003e5827e50d824da2d8a05c612492f5ad9c0a75a70000000000000000000000005bc314c08111df5768f4a25af25e879d910f9acf0000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000dbf8d9b8d616046172677315f40768747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f656873616e6973696c6475722d75782f6d757475616c2d736c6f742f353762646662366230313162356665333038636333346630376431356436396334323032323839382f7265636f7264732f646973706c6163656d656e742e6d64840433616334386361626639663831663239306637333435363161313933366161633266383564353433323163316161643633616364643961646336623436373561066d6574686f642c6d617463680000000000008301e482a01c65118b9bd9df44335d13de0a0cfdb4b9f24a9ab4fe20001cbcc122cf628cbba03ef2be9f9e6b00fe7e17aa40d6acca0200117c678941faa2204b34332fdb962a"
+  },
+  "value_credited": false,
+  "sender": "0x3e5827e50D824da2D8A05c612492F5ad9C0a75A7",
+  "recipient": "0x5BC314c08111DF5768f4A25AF25E879d910F9acF",
+  "tx_id": "0xeec2610f74b7cb6a70a0dbbf50525d667980c8a1bb82d4481d727177a614c812",
+  "activator": "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8",
+  "last_leader": "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8",
+  "result_name": "MAJORITY_AGREE",
+  "num_of_rounds": "1",
+  "last_round": {
+    "round": "0",
+    "leader_index": "0",
+    "votes_committed": "5",
+    "votes_revealed": "5",
+    "appeal_bond": "0",
+    "rotations_left": "3",
+    "result": 6,
+    "round_validators": [
+      "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8",
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+      "0x14402D49f317CE1a2F35BAE01b1804A2A9703dCb",
+      "0xec2Fb79cd12255Eb34886CEd7332f27B98DEe658",
+      "0x90402341F0B0e97b23023c0a87de957FB7148E0F"
+    ],
+    "validator_votes_hash": [
+      "0x75c47cad495d6593b452a71e6cc03d2c0d1c8739edfd969ea0c6a43f873d8721",
+      "0xcc029456fbd01d8142da87b7d665eca89bd5a9bdcfc425bd15db4520c06d8d00",
+      "0x120c4470460da607a66d1eb385e4f98520c732b1f51d8ffc0defbdc651712573",
+      "0x5830cbe4c6ea41ee7168e18c0832de0a80136417ded0a47b10959a9cd7a6da63",
+      "0xa3bc5b223cc7c4c078fa2bbc6b50f8c19b3efad973590a94b118b60a8ef616c1"
+    ],
+    "validator_votes": [
+      1,
+      1,
+      5,
+      5,
+      1
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "AGREE",
+      "IDLE",
+      "IDLE",
+      "AGREE"
+    ]
+  },
+  "type": 2,
+  "status_name": "FINALIZED"
+}

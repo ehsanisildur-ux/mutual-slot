@@ -1,0 +1,452 @@
+{
+  "network": "studionet",
+  "chain_id": 61999,
+  "contract_address": "0x5BC314c08111DF5768f4A25AF25E879d910F9acF",
+  "source_sha256": "e6450f04eab1ef1e77f2e11ea4db024e55cd763b44cf5711aa9c037a50fefad0",
+  "fixture_revision": "57bdfb6b011b5fe308cc34f07d15d69c42022898",
+  "transaction": {
+    "label": "uncertain",
+    "action": "match",
+    "hash": "0x2a8f53947e6d96365138c2a0ef0cefc97f1598f45c212bd42b598e1d1e0f4108"
+  },
+  "state": {
+    "policy": {
+      "applicants": [
+        "ada",
+        "ben",
+        "cy"
+      ],
+      "slots": [
+        {
+          "capacity": 1,
+          "id": "lab"
+        },
+        {
+          "capacity": 1,
+          "id": "field"
+        }
+      ],
+      "source_repository": "ehsanisildur-ux/mutual-slot"
+    },
+    "rounds": [
+      {
+        "report": {
+          "profiles": [
+            {
+              "id": "ada",
+              "quote": "ada accepts lab and field, preferring lab over field.",
+              "rejected": [],
+              "tiers": [
+                [
+                  "lab"
+                ],
+                [
+                  "field"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "ben",
+              "quote": "ben accepts lab and field, preferring lab over field.",
+              "rejected": [],
+              "tiers": [
+                [
+                  "lab"
+                ],
+                [
+                  "field"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "cy",
+              "quote": "cy accepts field and lab, preferring field over lab.",
+              "rejected": [],
+              "tiers": [
+                [
+                  "field"
+                ],
+                [
+                  "lab"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "lab",
+              "quote": "lab accepts ben, ada and cy, preferring ben first, ada second and cy third.",
+              "rejected": [],
+              "tiers": [
+                [
+                  "ben"
+                ],
+                [
+                  "ada"
+                ],
+                [
+                  "cy"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "field",
+              "quote": "field accepts ada, cy and ben, preferring ada first, cy second and ben third.",
+              "rejected": [],
+              "tiers": [
+                [
+                  "ada"
+                ],
+                [
+                  "cy"
+                ],
+                [
+                  "ben"
+                ]
+              ],
+              "unknown": []
+            }
+          ]
+        },
+        "result": {
+          "blocking_pairs": [],
+          "matching": {
+            "ada": "field",
+            "ben": "lab",
+            "cy": null
+          },
+          "proposals": [
+            {
+              "applicant": "ada",
+              "removed": null,
+              "slot": "lab"
+            },
+            {
+              "applicant": "ben",
+              "removed": "ada",
+              "slot": "lab"
+            },
+            {
+              "applicant": "cy",
+              "removed": null,
+              "slot": "field"
+            },
+            {
+              "applicant": "ada",
+              "removed": "cy",
+              "slot": "field"
+            },
+            {
+              "applicant": "cy",
+              "removed": "cy",
+              "slot": "lab"
+            }
+          ],
+          "status": "MATCHED",
+          "unmatched": [
+            "cy"
+          ]
+        },
+        "sha256": "3ac48cabf9f81f290f734561a1936aac2f85d54321c1aad63acdd9adc6b4675a",
+        "url": "https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/displacement.md"
+      },
+      {
+        "report": {
+          "profiles": [
+            {
+              "id": "ada",
+              "quote": "ada accepts lab and field equally; these two options are explicitly tied.",
+              "rejected": [],
+              "tiers": [
+                [
+                  "lab",
+                  "field"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "ben",
+              "quote": "ben accepts only lab and explicitly rejects field.",
+              "rejected": [
+                "field"
+              ],
+              "tiers": [
+                [
+                  "lab"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "cy",
+              "quote": "cy accepts only field and explicitly rejects lab.",
+              "rejected": [
+                "lab"
+              ],
+              "tiers": [
+                [
+                  "field"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "lab",
+              "quote": "lab accepts ada and ben equally, explicitly tied, and rejects cy.",
+              "rejected": [
+                "cy"
+              ],
+              "tiers": [
+                [
+                  "ada",
+                  "ben"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "field",
+              "quote": "field prefers cy over ada, accepts both, and rejects ben.",
+              "rejected": [
+                "ben"
+              ],
+              "tiers": [
+                [
+                  "cy"
+                ],
+                [
+                  "ada"
+                ]
+              ],
+              "unknown": []
+            }
+          ]
+        },
+        "result": {
+          "blocking_pairs": [],
+          "matching": {
+            "ada": "lab",
+            "ben": null,
+            "cy": "field"
+          },
+          "proposals": [
+            {
+              "applicant": "ada",
+              "removed": null,
+              "slot": "lab"
+            },
+            {
+              "applicant": "ben",
+              "removed": "ben",
+              "slot": "lab"
+            },
+            {
+              "applicant": "cy",
+              "removed": null,
+              "slot": "field"
+            }
+          ],
+          "status": "MATCHED",
+          "unmatched": [
+            "ben"
+          ]
+        },
+        "sha256": "fbdca5326983f262bb18146946ebf6419a371fcbf307b94ede404fdbe69ced43",
+        "url": "https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/ties.md"
+      },
+      {
+        "report": {
+          "profiles": [
+            {
+              "id": "ada",
+              "quote": "ada accepts only lab and rejects field.",
+              "rejected": [
+                "field"
+              ],
+              "tiers": [
+                [
+                  "lab"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "ben",
+              "quote": "ben accepts field and lab, preferring field over lab.",
+              "rejected": [],
+              "tiers": [
+                [
+                  "field"
+                ],
+                [
+                  "lab"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "cy",
+              "quote": "cy explicitly rejects both lab and field.",
+              "rejected": [
+                "lab",
+                "field"
+              ],
+              "tiers": [],
+              "unknown": []
+            },
+            {
+              "id": "lab",
+              "quote": "lab accepts only ben and rejects ada and cy.",
+              "rejected": [
+                "ada",
+                "cy"
+              ],
+              "tiers": [
+                [
+                  "ben"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "field",
+              "quote": "field accepts only ada and rejects ben and cy.",
+              "rejected": [
+                "ben",
+                "cy"
+              ],
+              "tiers": [
+                [
+                  "ada"
+                ]
+              ],
+              "unknown": []
+            }
+          ]
+        },
+        "result": {
+          "blocking_pairs": [],
+          "matching": {
+            "ada": null,
+            "ben": "lab",
+            "cy": null
+          },
+          "proposals": [
+            {
+              "applicant": "ada",
+              "removed": "ada",
+              "slot": "lab"
+            },
+            {
+              "applicant": "ben",
+              "removed": "ben",
+              "slot": "field"
+            },
+            {
+              "applicant": "ben",
+              "removed": null,
+              "slot": "lab"
+            }
+          ],
+          "status": "MATCHED",
+          "unmatched": [
+            "ada",
+            "cy"
+          ]
+        },
+        "sha256": "327e2cc6b757bffa5dcc638da9eed5edf5814a43ec970a61444e2d6f8ceae0df",
+        "url": "https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/rejection.md"
+      },
+      {
+        "report": {
+          "profiles": [
+            {
+              "id": "ada",
+              "quote": "ada has not declared whether lab or field is acceptable; both acceptance decisions remain unknown.",
+              "rejected": [],
+              "tiers": [],
+              "unknown": [
+                "lab",
+                "field"
+              ]
+            },
+            {
+              "id": "ben",
+              "quote": "ben accepts lab and field, preferring lab over field.",
+              "rejected": [],
+              "tiers": [
+                [
+                  "lab"
+                ],
+                [
+                  "field"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "cy",
+              "quote": "cy accepts field and lab, preferring field over lab.",
+              "rejected": [],
+              "tiers": [
+                [
+                  "field"
+                ],
+                [
+                  "lab"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "lab",
+              "quote": "lab accepts ben, ada and cy, preferring ben first, ada second and cy third.",
+              "rejected": [],
+              "tiers": [
+                [
+                  "ben"
+                ],
+                [
+                  "ada"
+                ],
+                [
+                  "cy"
+                ]
+              ],
+              "unknown": []
+            },
+            {
+              "id": "field",
+              "quote": "field accepts ada, cy and ben, preferring ada first, cy second and ben third.",
+              "rejected": [],
+              "tiers": [
+                [
+                  "ada"
+                ],
+                [
+                  "cy"
+                ],
+                [
+                  "ben"
+                ]
+              ],
+              "unknown": []
+            }
+          ]
+        },
+        "result": {
+          "blocking_pairs": [],
+          "matching": {},
+          "proposals": [],
+          "status": "REVIEW",
+          "unmatched": []
+        },
+        "sha256": "26a81b152c5973bf272878abb422954b9fd54542f1d939d0175ff6d7bc07bb84",
+        "url": "https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/uncertain.md"
+      }
+    ]
+  }
+}

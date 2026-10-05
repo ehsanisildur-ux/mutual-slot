@@ -39,6 +39,9 @@ for(const tx of deployment.transactions){
  assert.equal(proof.source_sha256,deployment.source_sha256);
  assert.equal(receipt.to_address.toLowerCase(),deployment.contract_address.toLowerCase());
  assert.deepEqual(state.rounds.at(-1).result.matching,expected[tx.label]);
+ const calldata=receipt.data.calldata.readable;
+ assert(calldata.includes(state.rounds.at(-1).url));
+ assert(calldata.includes(state.rounds.at(-1).sha256));
  for(const row of state.rounds){
   const body=fs.readFileSync(path.join(root,'records',new URL(row.url).pathname.split('/').pop()));
   assert.equal(digest(body),row.sha256);

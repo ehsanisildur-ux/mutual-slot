@@ -1,0 +1,189 @@
+{
+  "hash": "0x2a8f53947e6d96365138c2a0ef0cefc97f1598f45c212bd42b598e1d1e0f4108",
+  "from_address": "0x3e5827e50D824da2D8A05c612492F5ad9C0a75A7",
+  "to_address": "0x5BC314c08111DF5768f4A25AF25E879d910F9acF",
+  "data": {
+    "calldata": {
+      "readable": "{\"args\":[\"https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/uncertain.md\",\"26a81b152c5973bf272878abb422954b9fd54542f1d939d0175ff6d7bc07bb84\",]\"method\":\"match\"}"
+    }
+  },
+  "status": 7,
+  "result": 6,
+  "consensus_data": {
+    "votes": {
+      "0x36728d2a123aB444E603EE5b2ad17d18Bb193557": "idle",
+      "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100": "agree",
+      "0x4404Fb70d490c935758146f42A73DC850FF95C71": "agree",
+      "0x76c25AFC12c75485703cCFfd0083AA6201455B25": "agree",
+      "0x90402341F0B0e97b23023c0a87de957FB7148E0F": "idle"
+    },
+    "leader_receipt": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "leader",
+        "vote": null,
+        "calldata": {
+          "readable": "{\"args\":[\"https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/uncertain.md\",\"26a81b152c5973bf272878abb422954b9fd54542f1d939d0175ff6d7bc07bb84\",]\"method\":\"match\"}"
+        },
+        "eq_outputs": {
+          "0": {
+            "status": "return",
+            "payload": {
+              "readable": "{\"profiles\":[{\"id\":\"ada\"\"quote\":\"ada has not declared whether lab or field is acceptable; both acceptance decisions remain unknown.\"\"rejected\":[]\"tiers\":[]\"unknown\":[\"lab\",\"field\",]},{\"id\":\"ben\"\"quote\":\"ben accepts lab and field, preferring lab over field.\"\"rejected\":[]\"tiers\":[[\"lab\",],[\"field\",],]\"unknown\":[]},{\"id\":\"cy\"\"quote\":\"cy accepts field and lab, preferring field over lab.\"\"rejected\":[]\"tiers\":[[\"field\",],[\"lab\",],]\"unknown\":[]},{\"id\":\"lab\"\"quote\":\"lab accepts ben, ada and cy, preferring ben first, ada second and cy third.\"\"rejected\":[]\"tiers\":[[\"ben\",],[\"ada\",],[\"cy\",],]\"unknown\":[]},{\"id\":\"field\"\"quote\":\"field accepts ada, cy and ben, preferring ada first, cy second and ben third.\"\"rejected\":[]\"tiers\":[[\"ada\",],[\"cy\",],[\"ben\",],]\"unknown\":[]},]}"
+            }
+          }
+        },
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "calldata": {
+          "readable": "{\"args\":[\"https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/uncertain.md\",\"26a81b152c5973bf272878abb422954b9fd54542f1d939d0175ff6d7bc07bb84\",]\"method\":\"match\"}"
+        },
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      }
+    ],
+    "validators": [
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle"
+      },
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle"
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree"
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree"
+      }
+    ]
+  },
+  "gaslimit": 4,
+  "nonce": 4,
+  "created_at": "2026-10-05T07:45:18.281335+00:00",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "origin_address": "0x3e5827e50D824da2D8A05c612492F5ad9C0a75A7",
+  "triggered_on": null,
+  "appeal_validators_timeout": false,
+  "sim_config": {
+    "signed_rollup_transaction": "0xf9020904808307a12094b7278a61aa25c888815afc32ad3cc52ff24fe57580b901a427241a990000000000000000000000003e5827e50d824da2d8a05c612492f5ad9c0a75a70000000000000000000000005bc314c08111df5768f4a25af25e879d910f9acf0000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000d8f8d6b8d316046172677315dc0768747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f656873616e6973696c6475722d75782f6d757475616c2d736c6f742f353762646662366230313162356665333038636333346630376431356436396334323032323839382f7265636f7264732f756e6365727461696e2e6d64840432366138316231353263353937336266323732383738616262343232393534623966643534353432663164393339643031373566663664376263303762623834066d6574686f642c6d617463680000000000000000008301e482a0c20b52dfba9b01aa9deeaa4eb0b0a32cd0aaf731df3c8c14400afc56b168d8aca04a2fb1191f1c4db158cab4226cafb2aa611805bb5b2fd13e426ae81827f5be45"
+  },
+  "value_credited": false,
+  "sender": "0x3e5827e50D824da2D8A05c612492F5ad9C0a75A7",
+  "recipient": "0x5BC314c08111DF5768f4A25AF25E879d910F9acF",
+  "tx_id": "0x2a8f53947e6d96365138c2a0ef0cefc97f1598f45c212bd42b598e1d1e0f4108",
+  "activator": "0x4404Fb70d490c935758146f42A73DC850FF95C71",
+  "last_leader": "0x4404Fb70d490c935758146f42A73DC850FF95C71",
+  "result_name": "MAJORITY_AGREE",
+  "num_of_rounds": "1",
+  "last_round": {
+    "round": "0",
+    "leader_index": "0",
+    "votes_committed": "5",
+    "votes_revealed": "5",
+    "appeal_bond": "0",
+    "rotations_left": "3",
+    "result": 6,
+    "round_validators": [
+      "0x4404Fb70d490c935758146f42A73DC850FF95C71",
+      "0x36728d2a123aB444E603EE5b2ad17d18Bb193557",
+      "0x90402341F0B0e97b23023c0a87de957FB7148E0F",
+      "0x76c25AFC12c75485703cCFfd0083AA6201455B25",
+      "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100"
+    ],
+    "validator_votes_hash": [
+      "0x1beeb255ae72846f8f31b86d3b874e2cc8035cbb8448a276b056326a16b86b2b",
+      "0xbdc8704113ed528aacad2c005e4e1744b08d8f2fef65e839dd9eed8852a37619",
+      "0x1056fa625d1a6b5387cdce4ffb860b8b73f83280168dfcef78d0bfc5ffc3d33e",
+      "0xf04a03e03645af6f3089af982e88ac8226aa0cd7300107b7e279f2cd0e7c92dc",
+      "0x1ad66d6c464beadc4b5284c8095842889d2cfb9758c0eb3c56b14573c287b95d"
+    ],
+    "validator_votes": [
+      1,
+      5,
+      5,
+      1,
+      1
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "IDLE",
+      "IDLE",
+      "AGREE",
+      "AGREE"
+    ]
+  },
+  "type": 2,
+  "status_name": "FINALIZED"
+}

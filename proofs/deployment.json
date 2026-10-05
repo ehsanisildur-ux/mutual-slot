@@ -1,0 +1,53 @@
+{
+  "network": "studionet",
+  "chain_id": 61999,
+  "contract_address": "0x5BC314c08111DF5768f4A25AF25E879d910F9acF",
+  "source_sha256": "e6450f04eab1ef1e77f2e11ea4db024e55cd763b44cf5711aa9c037a50fefad0",
+  "exact_source_match": true,
+  "fixture_revision": "57bdfb6b011b5fe308cc34f07d15d69c42022898",
+  "sources": {
+    "displacement": {
+      "url": "https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/displacement.md",
+      "sha256": "3ac48cabf9f81f290f734561a1936aac2f85d54321c1aad63acdd9adc6b4675a"
+    },
+    "ties": {
+      "url": "https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/ties.md",
+      "sha256": "fbdca5326983f262bb18146946ebf6419a371fcbf307b94ede404fdbe69ced43"
+    },
+    "rejection": {
+      "url": "https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/rejection.md",
+      "sha256": "327e2cc6b757bffa5dcc638da9eed5edf5814a43ec970a61444e2d6f8ceae0df"
+    },
+    "uncertain": {
+      "url": "https://raw.githubusercontent.com/ehsanisildur-ux/mutual-slot/57bdfb6b011b5fe308cc34f07d15d69c42022898/records/uncertain.md",
+      "sha256": "26a81b152c5973bf272878abb422954b9fd54542f1d939d0175ff6d7bc07bb84"
+    }
+  },
+  "transactions": [
+    {
+      "label": "pool-deploy",
+      "action": "deploy",
+      "hash": "0xd9351f0f11ca4c72c51fc4e46d8e58a5ac9abac500bd2ff66378e8e75de92110"
+    },
+    {
+      "label": "displacement",
+      "action": "match",
+      "hash": "0xeec2610f74b7cb6a70a0dbbf50525d667980c8a1bb82d4481d727177a614c812"
+    },
+    {
+      "label": "ties",
+      "action": "match",
+      "hash": "0x6824b507de27453de9531650cfa5bcf5b7889c54c0571c0edd06ac044d6d1f59"
+    },
+    {
+      "label": "rejection",
+      "action": "match",
+      "hash": "0xffc3fce480585275035c1d0fc6813151756076de35516b2c61935880e1ab12c8"
+    },
+    {
+      "label": "uncertain",
+      "action": "match",
+      "hash": "0x2a8f53947e6d96365138c2a0ef0cefc97f1598f45c212bd42b598e1d1e0f4108"
+    }
+  ]
+}
